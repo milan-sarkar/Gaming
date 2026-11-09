@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Respawn Arcade – Play, Rank, Repeat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">Respawn<span>Arcade</span></a>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hit 'em before they hide.</h1>
+        <p>Warm up with a 15-second round, then pick your next game. Your best score is saved on this device.</p>
+        <div class="scoreboard">
+          <div><b id="score">0</b> score</div>
+          <div><b id="time">15</b> seconds</div>
+          <div><b id="best">0</b> best</div>
+        </div>
+        <button id="startBtn" class="btn">Start round</button>
+      </div>
+      <div class="arena" id="arena" aria-label="Target practice arena">
+        <p class="arena-msg" id="arenaMsg">Press Start round, then click the targets.</p>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <h2>Pick your game</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter games by genre"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="section join" id="join">
+      <h2>Get new releases first</h2>
+      <p>One email when a new game lands. No spam.</p>
+      <form id="signup" novalidate>
+        <label for="email" class="sr">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit">Join the list</button>
+      </form>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Respawn Arcade. All rights reserved.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
